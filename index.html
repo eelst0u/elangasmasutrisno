@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Estetik - Elang Asmasutrisno</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-800 text-white min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-sm bg-gray-900 rounded-3xl p-8 space-y-6">
+        
+        <div class="text-center mb-4 p-2 rounded-xl bg-gray-800 shadow-md">
+            <p class="text-xl font-extrabold text-blue-400">Elang Asmasutrisno</p>
+            <p class="text-sm font-light text-gray-400">NIM: 1710624025</p>
+        </div>
+
+        <div id="display-container" class="rounded-xl p-5 bg-gray-800">
+            <input type="text" id="display" 
+                   class="w-full bg-transparent text-right text-6xl font-extrabold text-white border-0 outline-none p-1 placeholder-gray-500 tracking-wider" 
+                   readonly 
+                   placeholder="0"
+                   style="height: 80px;">
+        </div>
+
+        <div class="grid grid-cols-4 gap-4">
+            
+            <button data-value="C" class="btn-calc btn-neo btn-clear text-xl font-bold rounded-xl p-5 text-white">C</button>
+            <button data-value="DEL" class="btn-calc btn-neo bg-gray-700 text-xl font-bold rounded-xl p-5 text-white">DEL</button>
+            <button data-value="%" class="btn-calc btn-neo bg-gray-700 text-xl font-bold rounded-xl p-5 text-white">%</button>
+            <button data-value="/" class="btn-calc btn-neo btn-operator text-xl font-bold rounded-xl p-5 text-white">/</button>
+
+            <button data-value="7" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">7</button>
+            <button data-value="8" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">8</button>
+            <button data-value="9" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">9</button>
+            <button data-value="*" class="btn-calc btn-neo btn-operator text-xl font-bold rounded-xl p-5 text-white">*</button>
+
+            <button data-value="4" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">4</button>
+            <button data-value="5" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">5</button>
+            <button data-value="6" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">6</button>
+            <button data-value="-" class="btn-calc btn-neo btn-operator text-xl font-bold rounded-xl p-5 text-white">-</button>
+
+            <button data-value="1" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">1</button>
+            <button data-value="2" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">2</button>
+            <button data-value="3" class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">3</button>
+            <button data-value="+" class="btn-calc btn-neo btn-operator text-xl font-bold rounded-xl p-5 text-white">+</button>
+
+            <button data-value="0" class="btn-calc btn-neo bg-gray-700 col-span-2 text-2xl font-bold rounded-xl p-5 text-white">0</button>
+            <button data-value="." class="btn-calc btn-neo bg-gray-700 text-2xl font-bold rounded-xl p-5 text-white">.</button>
+            <button data-value="=" class="btn-calc btn-neo btn-equal text-xl font-bold rounded-xl p-5 text-white">=</button>
+        </div>
+
+    </div>
+    <script src="Script.js"></script>
+    
+</body>
+</html>
