@@ -1,0 +1,51 @@
+
+        /* Mengatur font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Jelaskan Kodingan ini apa: Gaya dasar Neumorphism. Tombol punya bayangan ganda (shadow) yang membuatnya terlihat menonjol. */
+        .btn-neo {
+            transition: all 0.2s ease;
+            box-shadow: 6px 6px 12px #1c1f24, -6px -6px 12px #262a30;
+        }
+        
+        /* Jelaskan Kodingan ini apa: Gaya tombol saat diklik (:active). Bayangan berubah menjadi 'inset' (ke dalam) agar tombol terlihat seperti benar-benar tertekan. */
+        .btn-neo:active {
+            box-shadow: inset 4px 4px 8px #1c1f24, inset -4px -4px 8px #262a30;
+        }
+        
+        /* Gaya untuk tombol operator */
+        .btn-operator {
+            background-color: #5A67D8; /* Warna biru yang lebih cerah */
+            box-shadow: 6px 6px 12px #1c1f24, -6px -6px 12px #667EEA;
+        }
+        .btn-operator:hover {
+            background-color: #4C51BF;
+        }
+        
+        /* Gaya untuk tombol sama dengan (=) */
+        .btn-equal {
+            background-color: #38A169; /* Warna hijau yang lebih cerah */
+            box-shadow: 6px 6px 12px #1c1f24, -6px -6px 12px #48BB78;
+        }
+        .btn-equal:hover {
+            background-color: #2F855A;
+        }
+        
+        /* Gaya untuk tombol Clear (C) */
+        .btn-clear {
+            background-color: #E53E3E; /* Warna merah yang lebih cerah */
+            box-shadow: 6px 6px 12px #1c1f24, -6px -6px 12px #F56565;
+        }
+        .btn-clear:hover {
+            background-color: #C53030;
+        }
+
+        /* Gaya Neumorphism untuk display */
+        #display-container {
+            /* Jelaskan Kodingan ini apa: Bayangan 'inset' pada kotak layar untuk membuatnya terlihat tertekan/tenggelam ke dalam bodi kalkulator. */
+            box-shadow: inset 4px 4px 10px #1c1f24, inset -4px -4px 10px #262a30;
+        }
+
+    
